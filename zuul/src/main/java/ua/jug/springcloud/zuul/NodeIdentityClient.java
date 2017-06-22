@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import static org.springframework.web.bind.annotation.RequestMethod.GET;
 
-@FeignClient("web")
+@FeignClient(value = "web", fallback = NodeIdentityClientFallback.class)//, fallbackFactory = NodeIdentityClientFallbackFactory.class)
 public interface NodeIdentityClient {
     @RequestMapping(value = "uniqueValue", method = GET)
     String uniqueValue();
