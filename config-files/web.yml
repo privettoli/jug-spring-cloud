@@ -1,3 +1,4 @@
+server.port: 0
 story:
   author: "E. Hemingway"
   content: "For sale:
