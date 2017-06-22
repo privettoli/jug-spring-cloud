@@ -2,5 +2,4 @@ server.port: 0
 eureka.instance.instanceId: ${spring.application.name}:${random.value}
 story:
   author: "E. Hemingway"
-  content: "For sale:
-  Baby shoes. Never worn."
+  content: "No story for today"
